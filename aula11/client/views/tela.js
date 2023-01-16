@@ -7,13 +7,10 @@ class Tela {
     const response = await fetch("http://localhost:3000/api/lancamentos");
     const lancamentos = await response.json();
     const ano = new Ano();
-    const mesesCadastrados = [];
-    for (const lancamento of lancamentos) {
-      if (mesesCadastrados.indexOf(lancamento.mes) === -1) {
-        mesesCadastrados.push(lancamento.mes);
-        ano.adicionarMes(new Mes(lancamento.mes));
-      }
-    }
+    ano.adicionarMes(new Mes("janeiro"));
+    ano.adicionarMes(new Mes("fevereiro"));
+    ano.adicionarMes(new Mes("marco"));
+    ano.adicionarMes(new Mes("abril"));
     for (const lancamento of lancamentos) {
       ano.adicionarLancamento(
         lancamento.mes,

@@ -4,7 +4,7 @@ class HttpServer {
   constructor() {
     this.app = express();
     this.app.use(express.json());
-    this.app.use("/", express.static("../client"));
+    this.app.use("/", express.static("./client"));
   }
 
   register(method, url, callback) {

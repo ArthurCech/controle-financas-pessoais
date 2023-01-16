@@ -1,6 +1,6 @@
 class Mes {
   constructor(nome) {
-    if (nome === "") throw new Error("Mês Inválido: o nome é obrigatório");
+    if (nome === "") throw new Error("Mês Inválido: O nome é obrigatório");
     this.nome = nome;
     this.saldoInicial = 0;
     this.totalizador = {

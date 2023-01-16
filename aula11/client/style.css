@@ -37,7 +37,6 @@ button {
   background-color: #000;
   border: none;
   border-radius: 4px;
-  margin-top: 20px;
 }
 
 .tabela-lancamentos {
@@ -76,6 +75,11 @@ button {
 
 .grafico-coluna {
   width: 120px;
+}
+
+.grafico-coluna-cor {
+  height: 120px;
+  background-color: red;
 }
 
 .grafico-coluna-texto {
